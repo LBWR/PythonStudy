@@ -29,7 +29,7 @@ def focus(filepath, filmpath,count):
             tmp=key
     a = open(filepath[:-1] + 'txt', 'r')
     comment= b.readlines()#电影评论字符串
-    connet={tmp:a.readlines()}
+    connet={tmp:a.readlines()}#关键词
     for w in connet[tmp]:
         for s in comment:
             if w in s:
